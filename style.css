@@ -1,0 +1,665 @@
+*{
+
+ padding: 0;
+  margin: 0;
+ box-sizing: border-box;
+        }
+
+:root {
+--font-default: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+--font-primary: "Montserrat", sans-serif;
+ --font-secondary: "Poppins", sans-serif;
+}
+
+ /* Colors */
+:root {
+       --color-default: #222222;
+        --color-primary: #008374;
+         --color-secondary: #f85a40;
+}
+
+ /* Smooth scroll behavior */
+  :root {
+        scroll-behavior: smooth;
+}
+
+        /*--------------------------------------------------------------
+        # General
+        --------------------------------------------------------------*/
+        body {
+        font-family: var(--font-default);
+        color: var(--color-default);
+        }
+
+        a {
+       color: var(--color-primary);
+         text-decoration: none;
+        }
+
+        a:hover {
+       color: #00b6a1;
+         text-decoration: none;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+        font-family: var(--font-primary);
+        }
+        .nav-tabs {
+            border-bottom: 1px solid #000000;
+        }
+
+          /* ==================================================== */
+
+
+          /* NAVBAR */
+
+
+
+ .navbar {
+                --bs-bg-opacity: 1;
+                background-color: rgb(255, 255, 255) !important;
+                transition: 0.3 ease !important;
+ }
+
+
+
+ #nav-color{
+color: rgb(0, 0, 0);
+position: relative;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+color: #008374;
+
+ }
+
+
+
+
+
+
+.bars {
+      font-size: 23px;
+      font-family: 'Times New Roman', Times, serif
+
+}
+.nav-item{
+        margin-right: 35px;
+}
+
+
+/* NAVBAR END */
+
+
+
+
+
+
+
+
+/* 2nd page */
+
+.container2{
+        text-align: center;
+        width: 90%;
+        margin: 0 auto;
+        padding: 40px 20px
+
+}
+.content2 h2{
+     font-size: 45px;
+     margin-bottom: 25px;
+}
+.content2 h2 span{
+
+}
+.content2 h5{
+        font-family: Arial, Helvetica, sans-serif;
+
+
+}
+.content2 h5 span{
+        color: #ff6d56;
+        font-size: 25px;
+       font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.content2 p{
+       margin-left: 30%;
+       margin-right: 30%;
+
+
+}
+.content2 button{
+        border-radius:50px;
+
+}
+
+
+
+
+
+/* about us PAGE */
+
+
+.heading{
+        width:90%;
+        display:flex ;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        margin:20px auto;
+
+}
+.heading h1{
+        font-size: 50px;
+        color: #000;
+        margin-bottom: 25px;
+        position: relative;
+        font-weight: bold;
+        transition: .5s;
+}
+.heading h1:hover{
+        color: #ee0606;
+
+
+
+  }
+
+.heading h1::after{
+        content:"";
+        position: absolute;
+        width: 100%;
+        height: 4px;
+      display: block;
+        margin: 0 auto;
+        background-color: #4caf50;
+
+}
+
+
+
+.heading p{
+        font-size: 18px;
+        color: #666;
+        margin-bottom: 35px;
+}
+.container{
+        width: 90%;
+        margin: 0 auto;
+        padding: 10px 20px;
+}
+.About{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+
+
+}
+.aboutimage{
+        flex:1;
+        margin-right: 40px;
+        overflow: hidden;
+
+}
+.aboutimage img{
+        max-width: 100%;
+        height: auto;
+        display: block;
+        transition: 0.5s ease;
+        /* padding-left: 50px; */
+}
+.aboutimage:hover img{
+        transform: scale(1.2);
+}
+.content{
+        flex: 1;
+}
+.content h2{
+        font-size: 35px;
+        color: #000;
+        margin-bottom: 25px;
+        position: relative;
+        font-weight: bold;
+
+}
+.content p{
+        font-size: 18px;
+        color: #666;
+        margin-bottom: 35px;
+}
+.content .readmore{
+        /* color: rgb(58, 186, 255);
+        width:50px;
+        text-decoration: none;
+        font-weight: bold; */
+        display: inline-block;
+        padding: 10px 20px;
+        color: #fff;
+        font-size: 19px;
+        text-decoration: none;
+        border-radius: 25px;
+  margin-top:15px;
+  transition: 0.3s ease;
+  background-color: #4caf50;
+
+
+}
+.content .readmore:hover{
+        background: #3e8e41;
+
+}
+
+@media screen and (max-width:768px) {
+        .heading{
+                padding: 0px 20px;
+        }
+        .heading h1{
+                font-size: 36px;
+
+        }
+        .heading p{
+                font-size: 17px;
+                margin-bottom: 0px;
+        }
+        .container{
+                padding: 0px;
+
+        }
+        .About{
+                padding: 20px;
+                flex-direction: column;
+        }
+        .aboutimage{
+                margin-right: 0px;
+                margin-bottom: 20px;
+
+        }
+        .content p{
+                padding: 0px;
+                font-size: 16px;
+
+        }
+        .content .readmore{
+                font-size: 16px;
+        }
+
+}
+
+
+
+
+
+
+/* ABOUT2 */
+
+
+
+
+.container{
+        width: 90%;
+        margin: 0 auto;
+        padding: 10px 20px;
+}
+.About1{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+
+
+}
+.aboutimage1{
+        flex:1;
+
+        overflow: hidden;
+
+}
+.aboutimage1 img{
+        max-width: 100%;
+        height: auto;
+        display: block;
+        transition: 0.5s ease;
+        /* padding-left: 50px; */
+}
+.aboutimage1:hover img{
+        transform: scale(1.2);
+}
+.content1{
+        flex: 1;
+}
+.content1 h2{
+        font-size: 35px;
+        color: #000;
+        margin-bottom: 25px;
+        position: relative;
+        font-weight: bold;
+
+}
+.content1 p{
+        font-size: 18px;
+        color: #666;
+        margin-bottom: 35px;
+}
+
+@media screen and (max-width:768px) {
+        .heading1{
+                padding: 0px 20px;
+        }
+        .heading1 h1{
+                font-size: 36px;
+
+        }
+        .heading1 p{
+                font-size: 17px;
+                margin-bottom: 0px;
+        }
+        .container1{
+                padding: 0px;
+
+        }
+        .About1{
+                padding: 20px;
+                flex-direction: column;
+        }
+        .aboutimage1{
+                margin-right: 0px;
+                margin-bottom: 20px;
+
+        }
+        .content1 p{
+                padding: 0px;
+                font-size: 16px;
+
+        }
+        .content1 .readmore{
+                font-size: 16px;
+        }
+
+}
+
+
+
+
+/* ABOUT US PAGE END  */
+
+
+/* SERVICES PAGE STARTS */
+
+.animation {
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+        background-color: #e1faf7;
+    }
+
+    @media only screen and (max-width: 990px) {
+        .serviceBox {
+            margin-bottom: 40px;
+        }
+    }
+    .serviceBox {
+        border: 1px solid #ff8b8b;
+        border-top-width: 1px;
+        border-right-width: 1px;
+        border-bottom-width: 1px;
+        border-left-width: 1px;
+        border-top-style: solid;
+        border-right-style: solid;
+        border-bottom-style: solid;
+        border-left-style: solid;
+        border-top-color: rgb(221, 221, 221);
+        border-right-color: rgb(221, 221, 221);
+        border-bottom-color: rgb(221, 221, 221);
+        border-left-color: rgb(221, 221, 221);
+        border-image-source: initial;
+        border-image-slice: initial;
+        border-image-width: initial;
+        border-image-outset: initial;
+        border-image-repeat: initial;
+        text-align: center;
+        border-radius: 15px;
+        padding: 25px;
+        position: relative;
+        transition: all 0.4s ease-in-out 0s;
+        transition-behavior: normal;
+        transition-duration: 0.4s;
+        transition-timing-function: ease-in-out;
+        transition-delay: 0s;
+        transition-property: all;
+    }
+
+
+
+
+.serviceBox .service-icon i {
+    transform: rotate(0);
+    transition: all 0.2s ease-out 0s;
+    margin-top: 16px;
+}
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px / 1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px / 1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px / 1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+user agent stylesheet
+i {
+    font-style: italic;
+}
+.serviceBox .service-icon {
+    width: 80px;
+    height: 80px;
+    line-height: 70px;
+    border-radius: 50%;
+    border: 5px solid #4caf50;
+    font-size: 42px;
+    color: #4caf50;
+    margin: 0 auto 30px;
+    position: relative;
+    transition: all 0.2s ease-out 0s;
+}
+
+.serviceBox {
+    border: 1px solid #ddd;
+    text-align: center;
+    border-radius: 15px;
+    padding: 25px;
+    position: relative;
+    transition: all 0.4s ease-in-out 0s;
+}
+style attribute {
+    visibility: visible;
+    animation-duration: 2s;
+    animation-delay: 0s;
+    animation-name: zoomIn;
+}
+
+
+.title{
+        font-size: 20px;
+        font-weight: 800;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.description{
+        font-size: 15px;
+}
+
+
+/* SERVICES PAGE ENDS */
+
+
+
+
+/* fotter */
+
+
+.fotter{
+        width: 100%;
+        height :50vh;
+}
+.fot-text{
+        color: #000000;
+
+}
+.reach{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: #f85a40;
+}
+
+.fottericons{
+
+        list-style: none;
+        color: #000;
+
+}
+.fottericons li a{
+        text-decoration: none;
+        list-style: none;
+        color: #ffffff;
+
+
+
+}
+.paragraph{
+        color: #ffffff;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+.copyrigth{
+        color: #ddd;
+        opacity: 50%;
+}
+
+/* last end*/
+
+
+/* slider */
+@keyframes scroll{
+        0%{
+                transform:translateX(0);
+
+        }
+        100%{
+                transform:translateX(calc(-250px * 7));
+        }
+}
+.slider{
+        height: 150px;
+        margin: auto;
+        overflow: hidden;
+        position:relative;
+        width: auto;
+}
+.slider .slide-track{
+        animation: scroll 40s linear infinite;
+        display: flex;
+        width: calc(250px * 14);
+}
+.slider .slide{
+        height: 100px;
+        width: 250px;
+}
+.headingclient{
+        width:90%;
+        display:flex ;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        margin:20px auto;
+}
+
+.headingclient h1{
+        font-size: 50px;
+        color: #060404;
+        margin-bottom: 25px;
+        position: relative;
+        font-weight: bold;
+        /* font-family: 'Times New Roman', Times, serif; */
+}
+
+.headingclient h1::after{
+        content:"";
+        position: absolute;
+        width: 100%;
+        height: 4px;
+      display: block;
+        margin: 0 auto;
+        background-color: #ff0000;
+
+}
+/* slider-End */
+
+
+
+/* TEAM */
+
+
+.team{
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        background: radial-gradient(#281c3e,#0f051d);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+}
+.team-content{
+        width: 100%;
+        max-width: 1350px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(150px,auto));
+        align-items: center;
+        gap:2rem;
+        text-align: center;
+        margin-top: 4rem;
+}
+.team-content img{
+        width: 100%;
+        height: auto;
+        border-radius: 15px;
+        margin-bottom: 15px;
+}
